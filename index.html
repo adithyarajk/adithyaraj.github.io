@@ -7,7 +7,7 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <!-- ... -->
 </head>
-<body class="bg-gray-300 divide-y-2 divide-gray-400">
+<body class=" divide-y-2 divide-gray-400">
   <!-- ... -->
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="flex justify-center items-center flex-wrap">
@@ -15,26 +15,26 @@
         !-->
     <img class="p-4" src="./logo.png" alt="IITM badge">
 
-    <h1 class="text-4xl p-4 font-sans font-bold">Speech Processing Lab, IITM</h1>
+    <h1 class="text-2xl p-4 font-sans font-bold sm:text-4xl">Speech Processing Lab, IITM</h1>
 </div>
-    <nav class="p-2 bg-white flex justify-center sticky top-0 bg-blue-900">
-        <ul class="flex items-center flex-wrap p-2 divide-x-2 divide-red-300">
+    <nav class="p-2 bg-white flex justify-center sticky top-0">
+        <ul class="flex items-center flex-wrap p-2 divide-x-2 divide-red-300 ">
             <li>
-                <a href="#" class="p-2 rounded-full text-white py-3 px-6 hover:bg-gray-900">Home</a>
+                <a href="#" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Home</a>
             </li>
             <li>
-                <a href="#" class="p-2 rounded-full text-white py-3 px-6 hover:bg-gray-900 ">Projects</a>
+                <a href="#" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Projects</a>
             </li>
             <li>
-                <a href="#" class="p-2 rounded-full text-white py-3 px-6 hover:bg-gray-900 ">Research work</a>
+                <a href="#" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Research work</a>
             </li>
             <li>
-                <a href="https://github.com/Speech-Lab-IITM" class="p-2 rounded-full text-white py-3 px-6 hover:bg-gray-900"  target="_blank">Build your own ASR</a>
+                <a href="https://github.com/Speech-Lab-IITM" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900"  target="_blank">Build your own ASR</a>
             <li>
-                <a href="#" class="p-2 rounded-full text-white py-3 px-6 hover:bg-gray-900 ">Alumni</a>
+                <a href="#" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Alumni</a>
             </li>
             <li>
-                <a href="#" class="p-2 rounded-full text-white py-3 px-6 hover:bg-gray-900">Challenge ></a>
+                <a href="#" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Challenges ></a>
             </li>
         </ul>
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"style="background: url('./backgroung_image.png')" -->
@@ -43,7 +43,7 @@
 
     <div class="flex justify-center p-40 flex-wrap" style="background: url('./image-1.jpg')">
         
-        <a class="bg-gray-500 py-3 px-3 m-2 hover:bg-gray-900 hover:text-white border broder-gray-900" href="https://asr.iitm.ac.in/web_demo/asr_new/" target="_blank">
+        <a class="bg-gray-500 py-3 px-3 m-2 hover:bg-gray-900 hover:text-white" href="https://asr.iitm.ac.in/web_demo/asr_new/" target="_blank">
             <h1 class="text-4xl p-4">ASR Online</h1>
             Automatic Speech Recognition for
             small audio files !!
@@ -67,13 +67,13 @@
 
     <div class="flex justify-center items-center p-40" >
 
-        <p class="text-4xl break-words bg-gray-500 rounded-full py-3 px-6 ">
+        <p class="text-4xl break-words bg-gray-500 rounded-full py-3 px-6 font-sans">
             We work on Automatic Speech Recognition
             in English and Indian languages!
         </p>
     </div>
 
-    <div class="flex justify-evenly align-middle py-40 bg-white flex-wrap" >
+    <div class="flex justify-evenly align-middle py-40 bg-white flex-wrap font-sans" >
 
         <div class="p-2 ">
             <img class="rounded-full py-6 px-6 border-4 border-gray-500" src="./umesh.webp" alt="Prof Umesh">
@@ -152,8 +152,8 @@
         </div>
     </div>
         
-    <div class="flex justify-around align-middle p-40 bg-blue-900 flex-wrap">
-        <div class="text-white p-4">
+    <div class="flex justify-around align-middle p-40 flex-wrap bg-white">
+        <div class="p-4">
             <div>Room No. CSD-313,</div>
             <div>ESB Building,</div>
             <div>Dept of Electrical Engineering,</div>
@@ -162,25 +162,26 @@
             <div>e-mail: speechiitm@ee.iitm.ac.in</div>
             <div>Tel:  044 2257-5477    </div>        
         </div>
-        <div class="p-4 bg-white">
-            <form action="" method="post" class="flex flex-row ">
+        <div class="p-4 bg-white border rounded">
+            <form action="" method="post" class="flex flex-row flex-wrap ">
+                
                 <div>
                     <div class="p-2">
-                        <input class="bg-gray-900 rounded-full text-white py-3 px-6" type="text" name="first-name" id="first-name" placeholder="First Name">
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="first-name" id="first-name" placeholder="First Name">
                     </div>
                     <div class="p-2">
-                        <input class="bg-gray-900 rounded-full text-white py-3 px-6" type="text" name="last-name" id="last-name" placeholder="Last Name">
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="last-name" id="last-name" placeholder="Last Name">
                     </div>
                     <div class="p-2">
-                        <input class="bg-gray-900 rounded-full text-white py-3 px-6" type="email" name="email" id="email" placeholder="Email">
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" name="email" id="email" placeholder="Email">
                     </div>
                     <div class="p-2">
-                        <input class="bg-gray-900 rounded-full text-white py-3 px-6" type="text" name="phone" id="phone" placeholder="Phone ">
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="phone" id="phone" placeholder="Phone ">
                     </div>
                 </div>
                 <div class="flex flex-col">
                     <textarea name="message" id="input_message" cols="30" rows="10" placeholder="Enter your message here." ></textarea>
-                    <input class="bg-gray-900 rounded-full text-white py-1 px-2 p-2" type="submit" value="submit">
+                    <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="submit">
                 </div>
                 
             </form>
