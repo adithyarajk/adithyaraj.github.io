@@ -6,6 +6,18 @@
   <title>Speech Lab, IIT Madras</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <!-- ... -->
+  <style>
+ #showme{ 
+   display: none;
+ }
+ #showhim:hover .showme{
+   display : block;
+ }
+
+    
+  </style>
+
+
 </head>
 <body class=" divide-y-2 divide-gray-400">
   <!-- ... -->
@@ -18,29 +30,42 @@
     <h1 class="text-2xl p-4 font-sans font-bold sm:text-4xl">Speech Processing Lab, IITM</h1>
 </div>
     <nav class="p-2 bg-white flex justify-center sticky top-0">
-        <ul class="flex items-center flex-wrap p-2 divide-x-2 divide-red-300 ">
+        <ul class="flex items-center flex-wrap p-2 divide-x-2 divide-red-300 font-semibold ">
             <li>
-                <a href="#" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Home</a>
+                <a href="index.html" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Home</a>
             </li>
             <li>
-                <a href="#" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Projects</a>
+                <a href="./projects.html" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Projects</a>
             </li>
             <li>
-                <a href="#" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Research work</a>
+                <a href="./Research.html" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Publications</a>
             </li>
             <li>
                 <a href="https://github.com/Speech-Lab-IITM" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900"  target="_blank">Build your own ASR</a>
             <li>
-                <a href="#" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Alumni</a>
+                <a href="./Alumni.html" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Alumni</a>
             </li>
-            <li>
-                <a href="#" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Challenges ></a>
-            </li>
+            <!--
+            <li id="showhim">
+                <a href="./Challenges.html" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900" >Challenges</a>
+
+                <div style="display: none;" id="showme">
+                <div>                
+                    <a href="https://sites.google.com/view/asr-challenge/home" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Hindi Challenges ></a>
+                </div>
+                <div>
+                    <a href="https://sites.google.com/view/englishasrchallenge/home" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">English Challenges ></a>
+                </div>
+            </div>
+                <a href="./Challenges.html" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Challenges ></a>
+                !-->
+                </li>
         </ul>
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"style="background: url('./backgroung_image.png')" -->
     </nav>
 
-
+    <!--<marquee class="text-red-900">April-2021: Project positions immediately available in Automatic Speech Recognition! More details in the Projects Tab!</marquee>
+!-->
     <div class="flex justify-center p-40 flex-wrap" style="background: url('./image-1.jpg')">
         
         <a class="bg-gray-500 py-3 px-3 m-2 hover:bg-gray-900 hover:text-white" href="https://asr.iitm.ac.in/web_demo/asr_new/" target="_blank">
@@ -180,8 +205,8 @@
                     </div>
                 </div>
                 <div class="flex flex-col">
-                    <textarea name="message" id="input_message" cols="30" rows="10" placeholder="Enter your message here." ></textarea>
-                    <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="submit">
+                    <textarea class="m-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="message" id="input_message" cols="30" rows="10" placeholder="Enter your message here." ></textarea>
+                    <input class="m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="submit">
                 </div>
                 
             </form>
