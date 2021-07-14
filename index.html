@@ -4,34 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Speech Lab, IIT Madras</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <!-- ... -->
+  <link href="tailwind.css" rel="stylesheet">
 </head>
-<body class=" divide-y-2 divide-gray-400">
-  <!-- ... -->
-<!-- This example requires Tailwind CSS v2.0+ -->
-<div class="flex justify-center items-center flex-wrap">
-    <!--<img class="p-4 h-1/5" src="./IITMadras.webp" alt="IITM badge">
-        !-->
-    <img class="p-4" src="./logo.png" alt="IITM badge">
+<body>
+    <div class="flex justify-center items-center flex-wrap bg-red-100">
+        <!--<img class="p-4 h-1/5" src="./IITMadras.webp" alt="IITM badge">
+            !-->
+            <a href="https://www.iitm.ac.in/">
+                <img class="p-4" src="./logo.png" alt="IITM badge">
+            </a>
+    
+        <h1 class="text-2xl p-4 font-sans font-extrabold sm:text-4xl">Speech Processing Lab, IITM</h1>
+       <!-- <marquee class="text-red-900 font-extrabold ">April-2021: Project positions immediately available in Automatic Speech Recognition! More details in the Projects Tab!</marquee>
+-->
+    </div>
 
-    <h1 class="text-2xl p-4 font-sans font-bold sm:text-4xl">Speech Processing Lab, IITM</h1>
-</div>
-    <nav class="p-2 bg-white flex justify-center sticky top-0 shadow bg-red-800">
-        <ul class="flex items-center flex-wrap p-2 divide-x-2 divide-red-300 font-semibold">
+    <nav class="p-4 bg-white flex justify-center sticky top-0 shadow bg-red-800 text-white">
+        <ul class="flex items-center flex-wrap  divide-x-2 divide-white font-semibold">
             <li>
-                <a href="index.html" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Home</a>
+                <a href="index.html" class=" rounded-full hover:text-white py-4 px-6 hover:bg-gray-900">Home</a>
             </li>
             <li>
-                <a href="projects.html" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Projects</a>
+                <a href="projects.html" class=" rounded-full hover:text-white py-4 px-6 hover:bg-gray-900">Projects</a>
             </li>
             <li>
-                <a href="publications.html" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Publications</a>
+                <a href="publications.html" class="rounded-full hover:text-white py-4 px-6 hover:bg-gray-900">Publications</a>
             </li>
             <li>
-                <a href="https://github.com/Speech-Lab-IITM" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900"  target="_blank">Build your own ASR</a>
+                <a href="https://github.com/Speech-Lab-IITM" class="rounded-full hover:text-white py-4 px-6 hover:bg-gray-900"  target="_blank">Build your own ASR</a>
             <li>
-                <a href="alumni.html" class="p-2 rounded-full hover:text-white py-3 px-6 hover:bg-gray-900">Alumni</a>
+                <a href="alumni.html" class=" rounded-full hover:text-white py-4 px-6 hover:bg-gray-900">Alumni</a>
             </li>
             <li>
             </li>
@@ -39,33 +41,47 @@
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"style="background: url('./backgroung_image.png')" -->
     </nav>
 
-    <!--<marquee class="text-red-900">April-2021: Project positions immediately available in Automatic Speech Recognition! More details in the Projects Tab!</marquee>
-!-->
-    <div class="flex justify-center p-40 flex-wrap" style="background: url('./image-1.jpg')">
-        
-        <a class="bg-gray-300 py-3 px-3 m-2 hover:bg-gray-900 hover:text-white" href="https://asr.iitm.ac.in/web_demo/asr_new/" target="_blank">
-            <h1 class="text-4xl p-4">ASR Online</h1>
-            Automatic Speech Recognition for
-            small audio files !!
-        </a>
-        <a class="bg-gray-300 py-3 px-3 m-2 hover:bg-gray-900 hover:text-white" href="https://asr.iitm.ac.in/NPTEL/Transcribe/index.html" target="_blank">
-            <h1 class="text-4xl p-4">ASR Offline</h1>
-            Automatic Speech Recognition for
-            long audio files !!!
-        </a>
-        <a class="bg-gray-300 py-3 px-3 m-2 hover:bg-gray-900 hover:text-white" href="https://asr.iitm.ac.in/web_demo/asr_new_MTab/" target="_blank">
-            <h1 class="text-4xl p-4">MT</h1>
-            Machine Translation, From English 
-            Text to Hindi Text !!
-        </a>
-        <a class="bg-gray-300 py-3 px-3 m-2 hover:bg-gray-900 hover:text-white" href="https://www.iitm.ac.in/speech/asr_new_SSab/" target="_blank">
-            <h1 class="text-4xl p-4">Speech2Speech</h1>
-            Speech2Speech, From English Audio
-            to Hindi Audio !!!
-        </a>
+
+
+    <div class="flex justify-center py-40 flex-wrap text-center" style="background: url('./image-1.jpg')">
+        <div class="bg-gray-300 py-3 px-3 m-2 shadow hover:bg-gray-900 hover:text-white">
+            <a class="py-3 px-3 m-2" href="https://asr.iitm.ac.in/web_demo/asr_new/" target="_blank">
+                <h1 class="text-4xl p-4">ASR Online</h1>
+                Tap and Speak in Hindi, English or Tamil
+            </a>
+        </div>
+        <div class="bg-gray-300 py-3 px-3 m-2 shadow hover:bg-gray-900 hover:text-white">
+            <a  class="py-3 px-3 m-2" href="https://asr.iitm.ac.in/web_demo/asr_SRT/" target="_blank">
+                <h1 class="text-4xl p-4">ASR Upload</h1>
+                Upload an audio file and
+                see the magic !!
+            </a>
+        </div>
+        <div class="bg-gray-300 py-3 px-3 m-2 shadow hover:bg-gray-900 hover:text-white">
+            <a class="py-3 px-3 m-2" href="https://asr.iitm.ac.in/NPTEL/Transcribe/index.html" target="_blank">
+                <h1 class="text-4xl p-4">ASR Offline</h1>
+                Automatic Speech Recognition for
+                long audio files !!!
+            </a>
+        </div>
+        <div class="bg-gray-300 py-3 px-3 m-2 shadow hover:bg-gray-900 hover:text-white">
+            <a class="py-3 px-3 m-2" href="https://asr.iitm.ac.in/web_demo/asr_new_MTab/" target="_blank">
+                <h1 class="text-4xl p-4">Machine Translation</h1>
+                Machine Translation, From English 
+                Text to Hindi Text !!
+            </a>
+        </div>
+        <div class="bg-gray-300 py-3 px-3 m-2 shadow hover:bg-gray-900 hover:text-white">
+            <a class="py-3 px-3 m-2" href="https://www.iitm.ac.in/speech/asr_new_SSab/" target="_blank">
+                <h1 class="text-4xl p-4">Speech2Speech</h1>
+                Speech2Speech, From English Audio
+                to Hindi Audio !!!
+            </a>
+        </div>
+
     </div>
 
-    <div class="flex justify-center items-center p-40" >
+    <div class="flex justify-center items-center p-40 bg-red-100" >
 
         <p class="text-4xl break-words bg-gray-500 rounded-full py-3 px-6 font-sans">
             We work on Automatic Speech Recognition
@@ -103,7 +119,7 @@
         </div>
     </div>
 
-    <div class="py-40 px-20 flex flex-col justify-between align-middle bg-white bg-red-100">
+    <div class="py-40 px-20 flex flex-col justify-between align-middle bg-red-100">
 
         <div class="text-4xl p-2 text-center">People at Speech Lab, IITM</div>
         <div class="flex flex-row flex-wrap justify-evenly" >
@@ -134,23 +150,29 @@
             </div>
 
             <div class="p-4">
+                <img src="pratik_kumar.jpeg" alt="" class="rounded-full">
+                <div><strong>Pratik Kumar</strong></div> 
+                <div><em>MS Scholar</em></div>
+                <div>ee20m018@smail.iitm.ac.in</div>
+            </div>
+
+            <div class="p-4">
                 <img src="nith1_edited.webp" alt="" class="rounded-full">
                 <div><strong>Nithya R</strong></div> 
                 <div><em>Project Associate</em></div>
                 <div>nithravi1212@gmail.com</div>
             </div>
             <div class="p-4">
-                <img src="sreyangosh.jpg" alt="" class="rounded-full">
-                <div><strong>Sreyan Gosh</strong></div> 
-                <div><em>Project Associate</em></div>
-                <div>gsreyan@gmail.com</div>
-            </div>
-
-            <div class="p-4">
                 <img src="sandesh_katta.jpeg" alt="" class="rounded-full">
                 <div><strong>Sandesh Katta</strong></div> 
                 <div><em>Research Associate</em></div>
                 <div>sandesh.katta97@gmail.com</div>
+            </div>
+            <div class="p-4">
+                <img src="sreyangosh.jpg" alt="" class="rounded-full">
+                <div><strong>Sreyan Gosh</strong></div> 
+                <div><em>Research Associate</em></div>
+                <div>gsreyan@gmail.com</div>
             </div>
 
             <div class="p-4">
@@ -167,7 +189,7 @@
         </div>
     </div>
         
-    <div class="flex justify-around align-middle py-40 flex-wrap bg-white">
+    <footer class="flex justify-around align-middle py-10 flex-wrap" >
         <div class="p-4">
             <div>Room No. CSD-313,</div>
             <div>ESB Building,</div>
@@ -202,7 +224,7 @@
             </form>
         </div>
 
-    </div>
+    </footer>
 
 </body>
 </html>
